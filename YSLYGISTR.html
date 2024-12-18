@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жесткий сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <header class="d-flex align-items-center p-3 bg-transparent">
+        <img class="cum-1" src="https://i.ytimg.com/vi/dD5Mybgewxs/maxresdefault.jpg" alt="Image" width="250">
+        <div class="ml-auto">
+            <p>Группа ЭФБО-05-23<br> Шиндяпкин Михаил Алексеевич</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-item nav-link" href="index.html">Главная</a>
+                <a class="nav-item nav-link" href="PERVAYASTR.html">Первый семестр</a>
+                <a class="nav-item nav-link" href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">Второй семестр</a>
+                <a class="nav-item nav-link" href="YSLYGISTR.html">Услуги</a>
+                <a class="nav-item nav-link" href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">Авторизация</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="plp">
+        <div class="row">
+            <aside class=" aside-kar" id="naviganion">
+                <h5>Навигация по странице</h5>
+                <a href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">Фронтенд</a>
+                <a href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">Бэкенд</a>
+            </aside>
+
+            <div class=" d-flex space-between align-items-center flex-column">
+                <h1 class="text-center">Разработка веб-приложений</h1>
+                <div class="cube-container d-flex justify-content-center flex-wrap">
+                    <div class="service mx-2 text-center">
+                        <img class="cum-3 cum34" src="https://i.pinimg.com/736x/98/bb/7c/98bb7ccc15ea6d79d1881bd3e773df9e.jpg" alt="Сайт-Визитка" width="300" height="250">
+                        <p>Сайт-Визитка</p>
+                        <button class="order-button btn btn-primary mt-2" data-service="Сайт-Визитка">Заказать</button>
+                    </div>
+
+                    <section class="service mx-2 text-center ">
+                        <img class="cum-2" src="https://i.pinimg.com/originals/c7/d2/1e/c7d21e48a30e9d23d1b17e5b8ea5fad2.png" alt="Корпоративный сайт" width="300" height="250">
+                        <p>Корпоративный сайт</p>
+                        <button class="order-button btn btn-primary mt-2" data-service="Корпоративный сайт">Заказать</button>
+                    </section>
+
+                    <section class="service mx-2 text-center">
+                        <img class="cum-4" src="https://avatars.mds.yandex.net/i?id=9bd5b1046f4c8c5942f0c3b7a718e1b6f7aadc5cb628a8d3-5239793-images-thumbs&n=13" alt="Интернет магазин" width="300" height="250">
+                        <p>Интернет магазин</p>
+                        <button class="order-button btn btn-primary mt-2" data-service="Интернет магазин">Заказать</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <h5 id="modalTitle" class="modal-title">Разработка веб-приложения</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время</p>
+                    <form id="myForm">
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Электронная почта:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон:</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="+7 (____) ____-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Страна:</label>
+                            <select class="form-control" id="country" name="country" required>
+                                <option value="">Выберите страну</option>
+                                <option value="ru">Россия</option>
+                                <option value="us">США</option>
+                                <option value="de">Германия</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Дата:</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Комментарии:</label>
+                            <textarea class="form-control" id="comments" name="comments"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="html" required>
+                            <label for="html" class="form-check-label">Согласен на обработку моих персональных данных</label>
+                        </div>
+                        <input type="hidden" id="serviceType" name="serviceType">
+                        <button type="submit" class="btn btn-primary mt-3">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-transparent text-center py-4">
+        <p>© Шиндяпкин Михаил Алексеевич, 2024</p>
+        <div>
+            <a href=""><img src="https://ppz-ural.ru/attachments/Image/prilozheniya-vkontakte.png?1533807009013" alt="VK" width="55"></a>
+            <a href=""><img src="https://mizuno.com.ru/upload/medialibrary/643/643f0280187794ed8a7e822a8bd56343.png" alt="Mizuno" width="55"></a>
+        </div>
+        <button id="scrollTopBtn" class="btn btn-secondary mt-3" onclick="scrollToTop()">Наверх</button>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        window.onscroll = function() {
+            const button = document.querySelector('#scrollTopBtn');
+            button.style.display = document.documentElement.scrollTop > 100 ? "block" : "none";
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.querySelectorAll(".order-button").forEach(button => {
+            button.onclick = function() {
+                const serviceType = this.getAttribute('data-service');
+                document.getElementById('modalTitle').textContent = serviceType;
+                document.getElementById('serviceType').value = serviceType;
+                $('#myModal').modal('show');
+            }
+        });
+    </script>
+</body>
+
+</html>

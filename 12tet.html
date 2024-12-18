@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функции js</title>
+    <style>
+        .content {
+            display: block;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgb(27, 207, 117);
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Заголовок H1</h1>
+    
+    <button onclick="toggleVisibility('.content')">Переключить видимость блока</button>
+
+    <button onclick="changeBackgroundColor('yellow')">Изменить фон на желтый</button>
+    
+    <button onclick="resetBackgroundColor()">Вернуть стандартный фон</button>
+
+    <button onclick="showMessage('Скрипт загружен!')">Вывести сообщение в консоль</button>
+    
+    <button onclick="logCurrentTime()">Вывести текущее время в консоль</button>
+    
+    <div class="content">
+        <p>Этот блок будет скрываться и показываться при нажатии на кнопку.</p>
+    </div>
+
+    <div class="buttons">
+        <button onclick="updateH1FromURL()">Обновить заголовок из URL</button>
+    </div>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
